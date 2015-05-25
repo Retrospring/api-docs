@@ -24,4 +24,4 @@ See [rfc/0001-api-docs-format.md](rfc/0001-api-docs-format.md)
 
 ### RFC Format
 
-[https://github.com/rust-lang/rfcs/blob/master/0000-template.md](Rust RFC format)
+[Rust RFC format](https://github.com/rust-lang/rfcs/blob/master/0000-template.md)
