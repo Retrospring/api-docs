@@ -14,10 +14,14 @@ If you want to contribute a translation into your language, please fork this rep
 
 People that contribute wrong translations on purpose won't get any following PRs accepted.
 
+## Requesting API additions, removals, or changes
+
+File an RFC in rfc/ via a Pull Request, written in English.
+
 ## Format
 
 See [rfc/0001-api-docs-format.md](rfc/0001-api-docs-format.md)
 
 ### RFC Format
 
-[https://github.com/rust-lang/rfcs/blob/master/0000-template.md](Rust RFC format), minus PR
+[https://github.com/rust-lang/rfcs/blob/master/0000-template.md](Rust RFC format)
