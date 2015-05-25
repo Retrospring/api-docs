@@ -1,6 +1,6 @@
 # service-docs
 
-Documentation for
+Documentation for Retrospring's public API
 
 ## Localization
 
