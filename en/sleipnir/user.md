@@ -24,6 +24,12 @@ Retrieve an URL leading to an avatar
   - where: `query`
   - type: `boolean`
   - default: `false`
+- `size`
+  - Size to render or redirect to (TXT, Redirect only!)
+  - optional
+  - where: `query`
+  - type: `string`
+  - default: `medium`
 
 #### Additional Formats
 
@@ -39,12 +45,18 @@ Retrieve an URL leading to an avatar
 ##### JSON
 
 ```json
-{"avatar": "http://an.url.to/image.png"}
+{
+  "avatar":{
+    "large":"http://localhost:3000/system/users/profile_pictures/xxx/yyy/zzz/large/avatar.jpg",
+    "medium":"http://localhost:3000/system/users/profile_pictures/xxx/yyy/zzz/medium/avatar.jpg",
+    "small":"http://localhost:3000/system/users/profile_pictures/xxx/yyy/zzz/small/avatar.jpg"
+  }
+}
 ```
 
 ##### TXT
 ```plain
-http://an.url.to/image.png
+http://localhost:3000/system/users/profile_pictures/xxx/yyy/zzz/large/medium.jpg
 ```
 
 #### Failure Response
@@ -52,7 +64,10 @@ http://an.url.to/image.png
 ##### JSON
 
 ```json
-{"avatar": ""}
+{
+  "message": "Couldn't find User with 'id'=x",
+  "status":404
+}
 ```
 
 ##### TXT
@@ -78,6 +93,13 @@ Retrieve an URL leading to a header image
   - where: `query`
   - type: `boolean`
   - default: `false`
+- `size`
+  - Size to render or redirect to (TXT, Redirect only!)
+  - optional
+  - where: `query`
+  - type: `string`
+  - default: `web`
+
 
 #### Additional Formats
 
@@ -93,12 +115,18 @@ Retrieve an URL leading to a header image
 ##### JSON
 
 ```json
-{"header": "http://an.url.to/image.png"}
+{
+  "header":{
+    "web":"http://localhost:3000/system/users/profile_headers/xxx/yyy/zzz/web/header.jpg",
+    "mobile":"http://localhost:3000/system/users/profile_headers/xxx/yyy/zzz/mobile/header.jpg",
+    "retina":"http://localhost:3000/system/users/profile_headers/xxx/yyy/zzz/retina/header.jpg"
+  }
+}
 ```
 
 ##### TXT
 ```plain
-http://an.url.to/image.png
+http://localhost:3000/system/users/profile_headers/xxx/yyy/zzz/web/header.jpg
 ```
 
 #### Failure Response
@@ -106,7 +134,10 @@ http://an.url.to/image.png
 ##### JSON
 
 ```json
-{"header": ""}
+{
+  "message": "Couldn't find User with 'id'=x",
+  "status":404
+}
 ```
 
 ##### TXT
