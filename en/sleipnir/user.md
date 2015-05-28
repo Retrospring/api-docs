@@ -4,34 +4,35 @@ APIs that interact with users.
 
 ## Formats
 
-- json
+- `json`
+- `msgpack`
 
-### /sleipnir/user/:id/avatar
+### GET /sleipnir/user/:id/avatar
 
 Retrieve an URL leading to an avatar
 
 #### Parameters
 
-- id
+- `id`
   - ID of the user
   - required
-  - path
-  - number
-- redirect
+  - where: `path`
+  - type: `number`
+- `redirect`
   - Redirect to the resulting URL
   - optional
-  - query
-  - boolean
-  - false
+  - where: `query`
+  - type: `boolean`
+  - default: `false`
 
 #### Additional Formats
 
-- txt
+- `txt`
 
 #### Response Codes
 
-- 200 OK
-- 404 Not Found
+- `200 OK`
+- `404 Not Found`
 
 #### Success Response
 
@@ -60,32 +61,32 @@ http://an.url.to/image.png
 NULL
 ```
 
-### /sleipnir/user/:id/header
+### GET /sleipnir/user/:id/header
 
 Retrieve an URL leading to a header image
 
 #### Parameters
 
-- id
+- `id`
   - ID of the user
   - required
-  - path
-  - number
-- redirect
+  - where: `path`
+  - type: `number`
+- `redirect`
   - Redirect to the resulting URL
   - optional
-  - query
-  - boolean
-  - false
+  - where: `query`
+  - type: `boolean`
+  - default: `false`
 
 #### Additional Formats
 
-- txt
+- `txt`
 
 #### Response Codes
 
-- 200 OK
-- 404 Not Found
+- `200 OK`
+- `404 Not Found`
 
 #### Success Response
 

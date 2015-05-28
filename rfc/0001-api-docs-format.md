@@ -21,11 +21,11 @@ Description of the API endpoint and what it entails
 ## formats
 
 - Default API response formats
-- json
-- xml
+- `json`
+- `xml`
 - ...
 
-### /version/path/to/namespace/endpoint
+### METHOD /version/path/to/namespace/endpoint
 
 Description of the API
 
@@ -34,33 +34,33 @@ Description of the API
 if any are available
 
 - List of parameters ordered by required first
-- name
+- `name`
   - description
   - required?
-  - parameter location
-  - parameter type
-  - default value if any
+  - where: `parameter location`
+  - type: `parameter type`
+  - default: `default value if any`
 
 #### Additional Formats
 
 if any additional are implemented
 
-- txt
-- csv
+- `txt`
+- `csv`
 
 #### Response Codes
 
 list of response codes
 
-- 200 OK
-- 404 Not Found
+- `200 OK`
+- `404 Not Found`
 
 #### Required OAuth Scope(s)
 
 list of required OAuth scopes (if any)
 
-- write
-- moderation
+- `write`
+- `moderation`
 
 #### Rate Limit
 
