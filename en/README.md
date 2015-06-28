@@ -19,7 +19,7 @@ Access-Control-Allow-Headers:  Content-Type
 However, these will change once the request is sigend as an OAuth2 request,
 which it could become one of three possible responses.
 
-If the `Origin` header is not the same as any of the callbacks:
+If the `Origin` header is not the same as any of the callbacks*:
 
 ```
 The request is denied.
@@ -42,3 +42,5 @@ Access-Control-Allow-Origin:   ORIGIN-OF-CALLBACK
 Access-Control-Request-Method: *
 Access-Control-Allow-Headers:  Content-Type
 ```
+
+##### * We process origin scopes from callbacks, `https://example.org/callback` would resolve into `https://example.org`
