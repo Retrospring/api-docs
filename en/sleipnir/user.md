@@ -64,3 +64,5 @@ Retrieve given user id's avatar.
 ### [GET :id/header.json](user/:id/header.md)
 
 Retrieve given user id's header.
+
+##### last revised on: 2015/06/28 11:01

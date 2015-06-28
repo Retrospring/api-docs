@@ -37,7 +37,7 @@ Description of the API namespace
 
 Short description of the API endpoint
 
-##### last revision date
+##### last revised on: revision date
 ```
 
 ### endpoint
@@ -69,7 +69,7 @@ Description of the API endpoint and what it entails
 
 - list of error codes
 
-##### last revision date
+##### last revised on: revision date
 ```
 
 ### payload
@@ -85,10 +85,14 @@ Description of the payload
 
 code block of example response
 
-##### last revision date
+##### last revised on: revision date
 ```
 
 Strip _ from the ending code block tags
+
+# Notes
+
+Revision date should be either `DD/MM/YYYY HH:MM` or `YYYY/MM/DD HH:MM` unless specified otherwise, UTC+0 time, 24-hour.
 
 # Drawbacks
 
