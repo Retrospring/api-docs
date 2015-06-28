@@ -3,20 +3,24 @@
 - Date: 2015-05-25
 - Issue: [Retrospring/api-docs#1](https://github.com/Retrospring/api-docs/issues/1)
 
-# Summary
+## Summary
 
 Outlines basic API documentation format.
 
-# Motivation
+## Motivation
 
 To propose a format that uniformly marks out the layout of all API documentation.
 
-# Detailed design
+## Detailed design
+
+### Namespace
+
+stored in /lang/version/namespace.md
 
 ```md
-# /version/path/to/namespace
+# /version/path/to/namespace/
 
-Description of the API endpoint and what it entails
+Description of the API namespace
 
 ## formats
 
@@ -25,97 +29,63 @@ Description of the API endpoint and what it entails
 - `xml`
 - ...
 
-### METHOD /version/path/to/namespace/endpoint
+## endpoints
 
-Description of the API
+### [METHOD endpoint](namespace/endpoint.md)
 
-#### Parameters
+`METHOD https://retrospring.net/version/path/to/namespace/endpoint.json`
 
-if any are available
+Short description of the API endpoint
 
-- List of parameters ordered by required first
-- `name`
-  - description
-  - required?
-  - where: `parameter location`
-  - type: `parameter type`
-  - default: `default value if any`
+##### last revision date
+```
 
-#### Additional Formats
+### endpoint
 
-if any additional are implemented
+stored in /lang/version/namespace/endpoint.md
 
-- `txt`
-- `csv`
+```md
+# METHOD /version/path/to/namespace/endpoint
 
-#### Response Codes
+Description of the API endpoint and what it entails
 
-list of response codes
+## additional formats
 
-- `200 OK`
-- `404 Not Found`
+- Endpoint specific formats
 
-#### Required OAuth Scope(s)
+## request parameters
 
-list of required OAuth scopes (if any)
+- List of request parameters
 
-- `write`
-- `moderation`
+## caveats
 
-#### Rate Limit
+- throttling, oauth, etc
 
-if the endpoint is rate limited
+## responses
 
-- 15 minutes (Request interval)
-- 720 requests (max requests)
+- list of responses, each headered
 
-#### Success Response
+## error codes
 
-##### payload format in all capital letters (repeat for all)
+- list of error codes
 
-either: a payload
+##### last revision date
+```
 
-```json
-{"json": "payload"}
-_```
+### payload
 
-or: a tag linking to a payload
+stored in /lang/version/payload/name.md
 
-```json
-{"success": true, "payload": $UserPayload}
-_```
+```md
+# PayloadName
 
-#### Failure Response
+Description of the payload
 
-##### payload format in all capital letters (repeat for all)
+## example
 
-either: a payload
+code block of example response
 
-```json
-{"json": "payload"}
-_```
-
-or: a tag linking to a payload
-
-```json
-{"success": false, "payload": $FailurePayload}
-_```
-
-## Payloads
-
-### UserPayload
-
-##### payload format in all capital letters (repeat for all)
-
-```json
-{"json": "payload"}
-_```
-
-```xml
-<User>
-  ...
-</user>
-_```
+##### last revision date
 ```
 
 Strip _ from the ending code block tags

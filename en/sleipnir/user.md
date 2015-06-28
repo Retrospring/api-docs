@@ -7,143 +7,60 @@ APIs that interact with users.
 - `json`
 - `msgpack`
 
-### GET /sleipnir/user/:id/avatar
+## Endpoints
 
-Retrieve an URL leading to an avatar
+### [GET me.json](user/me.md)
 
-#### Parameters
+OAuthenticated User's full profile.
 
-- `id`
-  - ID of the user
-  - required
-  - where: `path`
-  - type: `number`
-- `redirect`
-  - Redirect to the resulting URL
-  - optional
-  - where: `query`
-  - type: `boolean`
-  - default: `false`
-- `size`
-  - Size to render or redirect to (TXT, Redirect only!)
-  - optional
-  - where: `query`
-  - type: `string`
-  - default: `medium`
+### [GET inbox.json](user/inbox.md)
 
-#### Additional Formats
+OAuthenticated User's inbox.
 
-- `txt`
+### [GET notifications.json](user/notifications.md)
 
-#### Response Codes
+OAuthenticated User's notifications.
 
-- `200 OK`
-- `404 Not Found`
+### [GET me/ask.json](user/me/ask.md)
 
-#### Success Response
+Ask a question to all of the OAuthenticated User's followers.
 
-##### JSON
+### [GET :id/profile.json](user/:id/profile.md)
 
-```json
-{
-  "avatar":{
-    "large":"http://localhost:3000/system/users/profile_pictures/xxx/yyy/zzz/large/avatar.jpg",
-    "medium":"http://localhost:3000/system/users/profile_pictures/xxx/yyy/zzz/medium/avatar.jpg",
-    "small":"http://localhost:3000/system/users/profile_pictures/xxx/yyy/zzz/small/avatar.jpg"
-  }
-}
-```
+Given user id's public profile.
 
-##### TXT
-```plain
-http://localhost:3000/system/users/profile_pictures/xxx/yyy/zzz/large/medium.jpg
-```
+### [GET :id/questions.json](user/:id/questions.md)
 
-#### Failure Response
+Given user id's questions.
 
-##### JSON
+### [POST :id/ask.json](user/:id/ask.md)
 
-```json
-{
-  "message": "Couldn't find User with 'id'=x",
-  "status":404
-}
-```
+Ask given user id a question.
 
-##### TXT
+### [GET :id/answers.json](user/:id/answers.md)
 
-```
-NULL
-```
+Given user id's answers.
 
-### GET /sleipnir/user/:id/header
+### [GET :id/followers.json](user/:id/followers.md)
 
-Retrieve an URL leading to a header image
+Given user id's followers.
 
-#### Parameters
+### [GET :id/following.json](user/:id/following.md)
 
-- `id`
-  - ID of the user
-  - required
-  - where: `path`
-  - type: `number`
-- `redirect`
-  - Redirect to the resulting URL
-  - optional
-  - where: `query`
-  - type: `boolean`
-  - default: `false`
-- `size`
-  - Size to render or redirect to (TXT, Redirect only!)
-  - optional
-  - where: `query`
-  - type: `string`
-  - default: `web`
+Given user id's following.
 
+### [POST :id/follow.json](user/:id/follow.md)
 
-#### Additional Formats
+Follow given user id.
 
-- `txt`
+### [DELETE :id/follow.json](user/:id/follow.md)
 
-#### Response Codes
+Unfollow given user id.
 
-- `200 OK`
-- `404 Not Found`
+### [GET :id/avatar.json](user/:id/avatar.md)
 
-#### Success Response
+Retrieve given user id's avatar.
 
-##### JSON
+### [GET :id/header.json](user/:id/header.md)
 
-```json
-{
-  "header":{
-    "web":"http://localhost:3000/system/users/profile_headers/xxx/yyy/zzz/web/header.jpg",
-    "mobile":"http://localhost:3000/system/users/profile_headers/xxx/yyy/zzz/mobile/header.jpg",
-    "retina":"http://localhost:3000/system/users/profile_headers/xxx/yyy/zzz/retina/header.jpg"
-  }
-}
-```
-
-##### TXT
-```plain
-http://localhost:3000/system/users/profile_headers/xxx/yyy/zzz/web/header.jpg
-```
-
-#### Failure Response
-
-##### JSON
-
-```json
-{
-  "message": "Couldn't find User with 'id'=x",
-  "status":404
-}
-```
-
-##### TXT
-
-```
-NULL
-```
-
-## Payloads
+Retrieve given user id's header.
