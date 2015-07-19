@@ -1,20 +1,16 @@
-# GET /sleipnir/user/:id/following.json
+# GET /sleipnir/util/resolve/:screen_name.json
 
-Given user's following
+Resolve screen name into user profile
 
 ## request parameters
 
-- `id`
+- `screen_name`
   - TODO: Write description
   - required
   - type: TODO
   - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
-
-# rate limit
-
-Max 72 requests every hour
 
 ## responses
 

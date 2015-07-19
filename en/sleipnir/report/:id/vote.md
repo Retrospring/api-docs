@@ -1,6 +1,6 @@
-# POST /sleipnir/user/:id/follow.json
+# POST /sleipnir/report/:id/vote.json
 
-Follow given user
+Vote a report up
 
 ## request parameters
 
@@ -28,9 +28,9 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/:id/follow.json
+# DELETE /sleipnir/report/:id/vote.json
 
-Unfollow given user
+Vote a report down
 
 ## request parameters
 

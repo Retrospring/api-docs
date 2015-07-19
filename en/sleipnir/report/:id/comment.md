@@ -1,6 +1,6 @@
-# POST /sleipnir/user/:id/follow.json
+# GET /sleipnir/report/:id/comment.json
 
-Follow given user
+Get report comments
 
 ## request parameters
 
@@ -14,7 +14,7 @@ Follow given user
 
 # oauth scopes
 
-- write
+- moderation
 
 # rate limit
 
@@ -28,9 +28,9 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/:id/follow.json
+# POST /sleipnir/report/:id/comment.json
 
-Unfollow given user
+Comment on report
 
 ## request parameters
 
@@ -39,6 +39,8 @@ Unfollow given user
   - required
   - type: TODO
   - CAVEAT: This is a REQUEST PATH variable.
+- `comment`
+  - TODO: Write description
 
 ## caveats
 

@@ -1,6 +1,6 @@
-# GET /sleipnir/user/:id/following.json
+# DELETE /sleipnir/report/:id/comment/:comment_id.json
 
-Given user's following
+Delete report comment
 
 ## request parameters
 
@@ -9,8 +9,17 @@ Given user's following
   - required
   - type: TODO
   - CAVEAT: This is a REQUEST PATH variable.
+- `comment_id`
+  - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
+
+# oauth scopes
+
+- write
 
 # rate limit
 

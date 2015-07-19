@@ -1,6 +1,6 @@
-# POST /sleipnir/user/:id/follow.json
+# POST /sleipnir/answer/:id/smile.json
 
-Follow given user
+Smile an answer
 
 ## request parameters
 
@@ -18,7 +18,7 @@ Follow given user
 
 # rate limit
 
-Max 72 requests every hour
+Max 720 requests every hour
 
 ## responses
 
@@ -28,9 +28,35 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/:id/follow.json
+# GET /sleipnir/answer/:id/smile.json
 
-Unfollow given user
+View answer smiles
+
+## request parameters
+
+- `id`
+  - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
+
+## caveats
+
+# rate limit
+
+Max 720 requests every hour
+
+## responses
+
+TODO
+
+## error codes
+
+TODO
+
+# DELETE /sleipnir/answer/:id/smile.json
+
+Frown an answer
 
 ## request parameters
 
@@ -48,7 +74,7 @@ Unfollow given user
 
 # rate limit
 
-Max 72 requests every hour
+Max 720 requests every hour
 
 ## responses
 

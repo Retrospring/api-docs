@@ -1,11 +1,6 @@
-# GET /sleipnir/user/inbox.json
+# GET /sleipnir/group.json
 
-Current user's inbox
-
-## request parameters
-
-- `mark_as_read`
-  - TODO: Write description
+List group IDs
 
 ## caveats
 
@@ -15,7 +10,7 @@ Current user's inbox
 
 # rate limit
 
-Max 720 requests every hour
+Max 72 requests every hour
 
 ## responses
 
@@ -25,13 +20,15 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/inbox.json
+# POST /sleipnir/group.json
 
-Delete entries from a user's inbox
+Create a group
 
 ## request parameters
 
-- `all`
+- `name`
+  - TODO: Write description
+- `display_name`
   - TODO: Write description
 
 ## caveats
@@ -42,7 +39,7 @@ Delete entries from a user's inbox
 
 # rate limit
 
-Max 720 requests every hour
+Max 72 requests every hour
 
 ## responses
 

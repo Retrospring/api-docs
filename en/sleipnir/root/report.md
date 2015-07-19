@@ -1,12 +1,12 @@
-# GET /sleipnir/user/me.json
+# GET /sleipnir/report.json
 
-Current user's profile
+Get reports
 
 ## caveats
 
 # oauth scopes
 
-- public
+- moderation
 
 # rate limit
 

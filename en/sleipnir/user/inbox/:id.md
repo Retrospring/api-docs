@@ -1,21 +1,24 @@
-# GET /sleipnir/user/inbox.json
+# PATCH /sleipnir/user/inbox/:id.json
 
-Current user's inbox
+Mark inbox as read
 
 ## request parameters
 
-- `mark_as_read`
+- `id`
   - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
 
 # oauth scopes
 
-- public
+- write
 
 # rate limit
 
-Max 720 requests every hour
+Max 14400 requests every hour
 
 ## responses
 
@@ -25,12 +28,17 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/inbox.json
+# DELETE /sleipnir/user/inbox/:id.json
 
-Delete entries from a user's inbox
+Delete entry from a user's inbox
 
 ## request parameters
 
+- `id`
+  - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 - `all`
   - TODO: Write description
 

@@ -1,12 +1,8 @@
-# GET /sleipnir/user/me.json
+# GET /sleipnir/user/public.json
 
-Current user's profile
+Public timeline
 
 ## caveats
-
-# oauth scopes
-
-- public
 
 # rate limit
 

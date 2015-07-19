@@ -1,6 +1,6 @@
-# GET /sleipnir/user/me.json
+# GET /sleipnir/user/timeline.json
 
-Current user's profile
+Current user's timeline
 
 ## caveats
 

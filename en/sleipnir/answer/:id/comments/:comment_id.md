@@ -1,6 +1,6 @@
-# GET /sleipnir/user/:id/following.json
+# DELETE /sleipnir/answer/:id/comments/:comment_id.json
 
-Given user's following
+Delete comment
 
 ## request parameters
 
@@ -9,12 +9,21 @@ Given user's following
   - required
   - type: TODO
   - CAVEAT: This is a REQUEST PATH variable.
+- `comment_id`
+  - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
 
+# oauth scopes
+
+- write
+
 # rate limit
 
-Max 72 requests every hour
+Max 360 requests every hour
 
 ## responses
 

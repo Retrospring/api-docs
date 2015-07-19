@@ -1,7 +1,5 @@
 # /sleipnir/user
 
-APIs that interact with users.
-
 ## Formats
 
 - `json`
@@ -9,60 +7,142 @@ APIs that interact with users.
 
 ## Endpoints
 
-### [GET me.json](user/me.md)
+### [GET /me.json](user/me.md)
 
-OAuthenticated User's full profile.
+`GET https://retrospring.net/api/sleipnir/user/me.json`
 
-### [GET inbox.json](user/inbox.md)
+Current user's profile
 
-OAuthenticated User's inbox.
+### [GET /timeline.json](user/timeline.md)
 
-### [GET notifications.json](user/notifications.md)
+`GET https://retrospring.net/api/sleipnir/user/timeline.json`
 
-OAuthenticated User's notifications.
+Current user's timeline
 
-### [GET me/ask.json](user/me/ask.md)
+### [GET /public.json](user/public.md)
 
-Ask a question to all of the OAuthenticated User's followers.
+`GET https://retrospring.net/api/sleipnir/user/public.json`
 
-### [GET :id/profile.json](user/:id/profile.md)
+Public timeline
 
-Given user id's public profile.
+### [GET /new.json](user/new.md)
 
-### [GET :id/questions.json](user/:id/questions.md)
+`GET https://retrospring.net/api/sleipnir/user/new.json`
 
-Given user id's questions.
+Current user's new numbers
 
-### [POST :id/ask.json](user/:id/ask.md)
+### [GET /inbox.json](user/inbox.md)
 
-Ask given user id a question.
+`GET https://retrospring.net/api/sleipnir/user/inbox.json`
 
-### [GET :id/answers.json](user/:id/answers.md)
+Current user's inbox
 
-Given user id's answers.
+### [DELETE /inbox.json](user/inbox.md)
 
-### [GET :id/followers.json](user/:id/followers.md)
+`DELETE https://retrospring.net/api/sleipnir/user/inbox.json`
 
-Given user id's followers.
+Delete entries from a user's inbox
 
-### [GET :id/following.json](user/:id/following.md)
+### [GET /notifications.json](user/notifications.md)
 
-Given user id's following.
+`GET https://retrospring.net/api/sleipnir/user/notifications.json`
 
-### [POST :id/follow.json](user/:id/follow.md)
+Current user's notifications
 
-Follow given user id.
+### [PATCH /notifications/:id.json](user/notifications/:id.md)
 
-### [DELETE :id/follow.json](user/:id/follow.md)
+`PATCH https://retrospring.net/api/sleipnir/user/notifications/:id.json`
 
-Unfollow given user id.
+Mark notification as read
 
-### [GET :id/avatar.json](user/:id/avatar.md)
+### [PATCH /inbox/:id.json](user/inbox/:id.md)
 
-Retrieve given user id's avatar.
+`PATCH https://retrospring.net/api/sleipnir/user/inbox/:id.json`
 
-### [GET :id/header.json](user/:id/header.md)
+Mark inbox as read
 
-Retrieve given user id's header.
+### [DELETE /inbox/:id.json](user/inbox/:id.md)
 
-##### last revised on: 2015/06/28 11:01
+`DELETE https://retrospring.net/api/sleipnir/user/inbox/:id.json`
+
+Delete entry from a user's inbox
+
+### [GET /:id/profile.json](user/:id/profile.md)
+
+`GET https://retrospring.net/api/sleipnir/user/:id/profile.json`
+
+Given user's profile
+
+### [GET /:id/questions.json](user/:id/questions.md)
+
+`GET https://retrospring.net/api/sleipnir/user/:id/questions.json`
+
+Given user's questions
+
+### [GET /:id/answers.json](user/:id/answers.md)
+
+`GET https://retrospring.net/api/sleipnir/user/:id/answers.json`
+
+Given user's answers
+
+### [GET /:id/followers.json](user/:id/followers.md)
+
+`GET https://retrospring.net/api/sleipnir/user/:id/followers.json`
+
+Given user's followers
+
+### [GET /:id/following.json](user/:id/following.md)
+
+`GET https://retrospring.net/api/sleipnir/user/:id/following.json`
+
+Given user's following
+
+### [POST /me/ask.json](user/me/ask.md)
+
+`POST https://retrospring.net/api/sleipnir/user/me/ask.json`
+
+Ask all your followers a question
+
+### [POST /:id/ask.json](user/:id/ask.md)
+
+`POST https://retrospring.net/api/sleipnir/user/:id/ask.json`
+
+Ask user a question
+
+### [POST /:id/follow.json](user/:id/follow.md)
+
+`POST https://retrospring.net/api/sleipnir/user/:id/follow.json`
+
+Follow given user
+
+### [DELETE /:id/follow.json](user/:id/follow.md)
+
+`DELETE https://retrospring.net/api/sleipnir/user/:id/follow.json`
+
+Unfollow given user
+
+### [GET /:id/avatar.json](user/:id/avatar.md)
+
+`GET https://retrospring.net/api/sleipnir/user/:id/avatar.json`
+
+Specified user's profile picture
+
+### [GET /:id/header.json](user/:id/header.md)
+
+`GET https://retrospring.net/api/sleipnir/user/:id/header.json`
+
+Specified user's profile header
+
+### [POST /:id/ban.json](user/:id/ban.md)
+
+`POST https://retrospring.net/api/sleipnir/user/:id/ban.json`
+
+Ban specified user
+
+### [DELETE /:id/ban.json](user/:id/ban.md)
+
+`DELETE https://retrospring.net/api/sleipnir/user/:id/ban.json`
+
+Unban specified user
+
+##### last revised on: 2015/07/19 23:16

@@ -1,6 +1,6 @@
-# GET /sleipnir/user/:id/following.json
+# PATCH /sleipnir/user/notifications/:id.json
 
-Given user's following
+Mark notification as read
 
 ## request parameters
 
@@ -12,9 +12,13 @@ Given user's following
 
 ## caveats
 
+# oauth scopes
+
+- write
+
 # rate limit
 
-Max 72 requests every hour
+Max 14400 requests every hour
 
 ## responses
 

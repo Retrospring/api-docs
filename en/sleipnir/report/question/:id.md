@@ -1,6 +1,6 @@
-# GET /sleipnir/user/:id/following.json
+# POST /sleipnir/report/question/:id.json
 
-Given user's following
+Report a question
 
 ## request parameters
 
@@ -9,8 +9,14 @@ Given user's following
   - required
   - type: TODO
   - CAVEAT: This is a REQUEST PATH variable.
+- `reason`
+  - TODO: Write description
 
 ## caveats
+
+# oauth scopes
+
+- write
 
 # rate limit
 

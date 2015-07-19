@@ -1,6 +1,6 @@
-# POST /sleipnir/user/:id/follow.json
+# GET /sleipnir/question/:id.json
 
-Follow given user
+Given question's content
 
 ## request parameters
 
@@ -11,10 +11,6 @@ Follow given user
   - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
-
-# oauth scopes
-
-- write
 
 # rate limit
 
@@ -28,9 +24,9 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/:id/follow.json
+# DELETE /sleipnir/question/:id.json
 
-Unfollow given user
+Delete given question
 
 ## request parameters
 
@@ -46,9 +42,39 @@ Unfollow given user
 
 - write
 
+## responses
+
+TODO
+
+## error codes
+
+TODO
+
+# POST /sleipnir/question/:id.json
+
+Answer a question
+
+## request parameters
+
+- `id`
+  - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
+- `answer`
+  - TODO: Write description
+- `share_flags`
+  - TODO: Write description
+
+## caveats
+
+# oauth scopes
+
+- write
+
 # rate limit
 
-Max 72 requests every hour
+Max 720 requests every hour
 
 ## responses
 

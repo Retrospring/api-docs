@@ -1,6 +1,6 @@
-# GET /sleipnir/user/:id/following.json
+# GET /sleipnir/question/:id/answers.json
 
-Given user's following
+Given question's answers
 
 ## request parameters
 

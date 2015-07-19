@@ -1,10 +1,15 @@
-# POST /sleipnir/user/:id/follow.json
+# POST /sleipnir/group/:id/user/:user_id.json
 
-Follow given user
+Add a user to group
 
 ## request parameters
 
 - `id`
+  - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
+- `user_id`
   - TODO: Write description
   - required
   - type: TODO
@@ -28,13 +33,18 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/:id/follow.json
+# DELETE /sleipnir/group/:id/user/:user_id.json
 
-Unfollow given user
+Remove a user from group
 
 ## request parameters
 
 - `id`
+  - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
+- `user_id`
   - TODO: Write description
   - required
   - type: TODO

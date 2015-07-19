@@ -1,6 +1,6 @@
-# GET /sleipnir/user/:id/following.json
+# GET /sleipnir/group/:id/members.json
 
-Given user's following
+View group members
 
 ## request parameters
 
@@ -11,6 +11,10 @@ Given user's following
   - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
+
+# oauth scopes
+
+- public
 
 # rate limit
 

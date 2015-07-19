@@ -1,17 +1,20 @@
-# GET /sleipnir/user/inbox.json
+# POST /sleipnir/answer/:id/subscribe.json
 
-Current user's inbox
+Subscribe to an answer
 
 ## request parameters
 
-- `mark_as_read`
+- `id`
   - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
 
 # oauth scopes
 
-- public
+- write
 
 # rate limit
 
@@ -25,14 +28,17 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/inbox.json
+# DELETE /sleipnir/answer/:id/subscribe.json
 
-Delete entries from a user's inbox
+Unsubscribe from an answer
 
 ## request parameters
 
-- `all`
+- `id`
   - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
 

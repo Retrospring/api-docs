@@ -1,6 +1,6 @@
-# POST /sleipnir/user/:id/follow.json
+# POST /sleipnir/user/:id/ban.json
 
-Follow given user
+Ban specified user
 
 ## request parameters
 
@@ -9,16 +9,16 @@ Follow given user
   - required
   - type: TODO
   - CAVEAT: This is a REQUEST PATH variable.
+- `reason`
+  - TODO: Write description
+- `until`
+  - TODO: Write description
 
 ## caveats
 
 # oauth scopes
 
-- write
-
-# rate limit
-
-Max 72 requests every hour
+- moderation
 
 ## responses
 
@@ -28,9 +28,9 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/:id/follow.json
+# DELETE /sleipnir/user/:id/ban.json
 
-Unfollow given user
+Unban specified user
 
 ## request parameters
 
@@ -44,11 +44,7 @@ Unfollow given user
 
 # oauth scopes
 
-- write
-
-# rate limit
-
-Max 72 requests every hour
+- moderation
 
 ## responses
 

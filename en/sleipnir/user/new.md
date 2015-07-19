@@ -1,6 +1,6 @@
-# GET /sleipnir/user/me.json
+# GET /sleipnir/user/new.json
 
-Current user's profile
+Current user's new numbers
 
 ## caveats
 
@@ -10,7 +10,7 @@ Current user's profile
 
 # rate limit
 
-Max 72 requests every hour
+Max 144 requests every hour
 
 ## responses
 

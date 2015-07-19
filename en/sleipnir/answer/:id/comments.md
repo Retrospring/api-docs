@@ -1,17 +1,16 @@
-# GET /sleipnir/user/inbox.json
+# GET /sleipnir/answer/:id/comments.json
 
-Current user's inbox
+Given answer's comments
 
 ## request parameters
 
-- `mark_as_read`
+- `id`
   - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
-
-# oauth scopes
-
-- public
 
 # rate limit
 
@@ -25,13 +24,18 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/inbox.json
+# POST /sleipnir/answer/:id/comments.json
 
-Delete entries from a user's inbox
+Comment on given answer
 
 ## request parameters
 
-- `all`
+- `id`
+  - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
+- `comment`
   - TODO: Write description
 
 ## caveats

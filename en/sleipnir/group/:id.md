@@ -1,11 +1,14 @@
-# GET /sleipnir/user/inbox.json
+# GET /sleipnir/group/:id.json
 
-Current user's inbox
+View group timeline
 
 ## request parameters
 
-- `mark_as_read`
+- `id`
   - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
 
@@ -15,7 +18,7 @@ Current user's inbox
 
 # rate limit
 
-Max 720 requests every hour
+Max 72 requests every hour
 
 ## responses
 
@@ -25,14 +28,17 @@ TODO
 
 TODO
 
-# DELETE /sleipnir/user/inbox.json
+# DELETE /sleipnir/group/:id.json
 
-Delete entries from a user's inbox
+Delete group
 
 ## request parameters
 
-- `all`
+- `id`
   - TODO: Write description
+  - required
+  - type: TODO
+  - CAVEAT: This is a REQUEST PATH variable.
 
 ## caveats
 
@@ -42,7 +48,7 @@ Delete entries from a user's inbox
 
 # rate limit
 
-Max 720 requests every hour
+Max 72 requests every hour
 
 ## responses
 
