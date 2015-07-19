@@ -11,8 +11,12 @@ Ask user a question
   - CAVEAT: This is a REQUEST PATH variable.
 - `question`
   - TODO: Write description
+  - required
+  - type: String
 - `anonymous`
   - TODO: Write description
+  - optional
+  - type: Boolean
 
 ## caveats
 
@@ -28,4 +32,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:22
+##### last revised on: 2015/07/19 23:25

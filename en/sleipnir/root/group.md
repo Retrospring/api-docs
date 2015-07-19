@@ -28,8 +28,12 @@ Create a group
 
 - `name`
   - TODO: Write description
+  - required
+  - type: String
 - `display_name`
   - TODO: Write description
+  - required
+  - type: String
 
 ## caveats
 
@@ -49,4 +53,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:22
+##### last revised on: 2015/07/19 23:25

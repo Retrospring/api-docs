@@ -6,8 +6,12 @@ Ask all your followers a question
 
 - `question`
   - TODO: Write description
+  - required
+  - type: String
 - `anonymous`
   - TODO: Write description
+  - optional
+  - type: Boolean
 
 ## caveats
 
@@ -27,4 +31,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:22
+##### last revised on: 2015/07/19 23:25

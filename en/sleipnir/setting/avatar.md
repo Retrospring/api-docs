@@ -6,14 +6,24 @@ Update user's avatar
 
 - `avatar`
   - TODO: Write description
+  - required
+  - type: UploadedFile
 - `crop_x`
   - TODO: Write description
+  - required
+  - type: Fixnum
 - `crop_y`
   - TODO: Write description
+  - required
+  - type: Fixnum
 - `crop_w`
   - TODO: Write description
+  - required
+  - type: Fixnum
 - `crop_h`
   - TODO: Write description
+  - required
+  - type: Fixnum
 
 ## caveats
 
@@ -33,4 +43,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:22
+##### last revised on: 2015/07/19 23:25

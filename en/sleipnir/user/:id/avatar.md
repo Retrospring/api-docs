@@ -11,8 +11,13 @@ Specified user's profile picture
   - CAVEAT: This is a REQUEST PATH variable.
 - `redirect`
   - TODO: Write description
+  - optional
+  - type: Boolean
 - `size`
   - TODO: Write description
+  - optional
+  - type: String
+  - default: medium
 
 ## caveats
 
@@ -24,4 +29,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:22
+##### last revised on: 2015/07/19 23:25

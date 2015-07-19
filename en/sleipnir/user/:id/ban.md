@@ -11,8 +11,12 @@ Ban specified user
   - CAVEAT: This is a REQUEST PATH variable.
 - `reason`
   - TODO: Write description
+  - optional
+  - type: String
 - `until`
   - TODO: Write description
+  - optional
+  - type: Fixnum
 
 ## caveats
 
@@ -54,4 +58,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:22
+##### last revised on: 2015/07/19 23:25

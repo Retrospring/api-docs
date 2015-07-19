@@ -63,8 +63,13 @@ Answer a question
   - CAVEAT: This is a REQUEST PATH variable.
 - `answer`
   - TODO: Write description
+  - required
+  - type: String
 - `share_flags`
   - TODO: Write description
+  - optional
+  - type: Fixnum
+  - default: 0
 
 ## caveats
 
@@ -84,4 +89,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:22
+##### last revised on: 2015/07/19 23:25
