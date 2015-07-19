@@ -12,11 +12,11 @@ Follow given user
 
 ## caveats
 
-# oauth scopes
+### oauth scopes
 
 - write
 
-# rate limit
+### rate limit
 
 Max 72 requests every hour
 
@@ -42,11 +42,11 @@ Unfollow given user
 
 ## caveats
 
-# oauth scopes
+### oauth scopes
 
 - write
 
-# rate limit
+### rate limit
 
 Max 72 requests every hour
 
@@ -58,4 +58,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:16
+##### last revised on: 2015/07/19 23:22

@@ -12,11 +12,11 @@ Mark inbox as read
 
 ## caveats
 
-# oauth scopes
+### oauth scopes
 
 - write
 
-# rate limit
+### rate limit
 
 Max 14400 requests every hour
 
@@ -44,11 +44,11 @@ Delete entry from a user's inbox
 
 ## caveats
 
-# oauth scopes
+### oauth scopes
 
 - write
 
-# rate limit
+### rate limit
 
 Max 720 requests every hour
 
@@ -60,4 +60,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:16
+##### last revised on: 2015/07/19 23:22

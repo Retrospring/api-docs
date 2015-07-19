@@ -12,11 +12,11 @@ Subscribe to an answer
 
 ## caveats
 
-# oauth scopes
+### oauth scopes
 
 - write
 
-# rate limit
+### rate limit
 
 Max 720 requests every hour
 
@@ -42,11 +42,11 @@ Unsubscribe from an answer
 
 ## caveats
 
-# oauth scopes
+### oauth scopes
 
 - write
 
-# rate limit
+### rate limit
 
 Max 720 requests every hour
 
@@ -58,4 +58,4 @@ TODO
 
 TODO
 
-##### last revised on: 2015/07/19 23:16
+##### last revised on: 2015/07/19 23:22
