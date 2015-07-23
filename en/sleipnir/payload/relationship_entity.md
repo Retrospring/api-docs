@@ -6,7 +6,8 @@ Describes a relationship
 
 ```json
 {
-  "user": UserSlimEntity,
+  "source": UserSlimEntity,
+  "target": UserSlimEntity,
   "following_since": 1437609082
 }
 ```
