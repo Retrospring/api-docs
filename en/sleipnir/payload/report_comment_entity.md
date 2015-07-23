@@ -1,9 +1,16 @@
 # ReportCommentEntity
 
-TODO
+Describes a comment on a report
 
 ## example
 
-TODO
+```json
+{
+  "id": 1,
+  "comment": "This is a moderation comment",
+  "user": UserSlimEntity,
+  "created_at": 1437608474
+}
+```
 
-##### last revised on: 2015/07/19 23:25
+##### last revised on: 2015/07/23 06:07

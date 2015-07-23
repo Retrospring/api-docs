@@ -1,9 +1,19 @@
 # ReportsEntity
 
-TODO
+Describes multiple `ReportEntities`
 
 ## example
 
-TODO
+```json
+{
+  "count": 50,
+  "next": "https://retrospring.net/some/url.json?since_id=25",
+  "reports": [
+    ReportEntity,
+    ReportEntity,
+    ...
+  ]
+}
+```
 
-##### last revised on: 2015/07/19 23:25
+##### last revised on: 2015/07/23 06:07

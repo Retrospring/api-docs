@@ -1,9 +1,15 @@
 # BaseEntity
 
-TODO
+The wrapper of every response.
 
 ## example
 
-TODO
+```json
+{
+  "success": true,
+  "code": 200,
+  "result": Entity
+}
+```
 
-##### last revised on: 2015/07/19 23:25
+##### last revised on: 2015/07/23 06:07

@@ -1,9 +1,14 @@
 # RelationshipEntity
 
-TODO
+Describes a relationship
 
 ## example
 
-TODO
+```json
+{
+  "user": UserSlimEntity,
+  "following_since": 1437609082
+}
+```
 
-##### last revised on: 2015/07/19 23:25
+##### last revised on: 2015/07/23 06:07

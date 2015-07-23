@@ -1,6 +1,6 @@
-# AnswersEntity
+# GroupMembersEntity
 
-Describes multiple `UserSlimEntities`
+Describes multiple `GroupMemberEntities`
 
 ## example
 
@@ -8,9 +8,9 @@ Describes multiple `UserSlimEntities`
 {
   "count": 50,
   "next": "https://retrospring.net/some/url.json?since_id=25",
-  "followers": [
-    RelationshipEntity,
-    RelationshipEntity,
+  "members": [
+    GroupMemberEntity,
+    GroupMemberEntity,
     ...
   ]
 }
